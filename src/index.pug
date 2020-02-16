@@ -1,0 +1,26 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title 年間カレンダー
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    table.table.table-bordered.table-dark.cells
+      thead
+        tr
+          th(colspan="7") 1月
+        tr
+          th(scope="col") 月
+          th(scope="col") 火
+          th(scope="col") 水
+          th(scope="col") 木
+          th(scope="col") 金
+          th(scope="col") 土
+          th(scope="col") 日
+      tbody.cells
+        <!-- tsでカレンダー追加 -->
+
+    div.card#panning_window
+      div.card-body This is some text within a card body.
+
+  script(type="text/javascript",src="./js/index.js")
